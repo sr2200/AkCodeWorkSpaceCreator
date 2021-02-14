@@ -1,50 +1,7 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace AkCodeWorkSpaceCreator
+namespace AkCodeWorkSpaceCreator.Data
 {
-    [JsonObject]
-    class AkWorkSpaceData
-    {
-        [JsonProperty("folders")]
-        public List<AkFolderData> Folders { get; set; }
-
-        [JsonProperty("settings")]
-        public AkCustomSettings Settings { get; set; }
-
-        public AkWorkSpaceData()
-        {
-            Folders = new List<AkFolderData>();
-            Settings = new AkCustomSettings();
-        }
-    }
-
-    [JsonObject]
-    class AkFolderData
-    {
-        [JsonProperty("name")]
-        public string Name { get; set; }
-
-        [JsonProperty("path")]
-        public string Path { get; set; }
-    }
-
-    [JsonObject]
-    class AkCustomSettings
-    {
-        [JsonProperty("workbench.colorCustomizations")]
-        public AkColorCustomizations ColorCustomizations { get; set; }
-
-        public AkCustomSettings()
-        {
-            ColorCustomizations = new AkColorCustomizations();
-        }
-    }
-
     /// <summary>
     /// 
     /// </summary>
