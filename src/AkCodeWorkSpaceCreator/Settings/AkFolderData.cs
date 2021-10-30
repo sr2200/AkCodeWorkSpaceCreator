@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AkCodeWorkSpaceCreator.Data
+namespace AkCodeWorkSpaceCreator.Settings
 {
     [JsonObject]
     class AkFolderData

@@ -1,21 +1,7 @@
-# AkCodeWorkSpaceCreator
-
-VSCode のワークスペースファイル（.code-workspace）を作成します。
-また、「.vscode」フォルダを作成します。
-設定をカスタマイズするためのテンプレートが記載されます。  
-デフォルト設定値は作成者が設定している内容を元にしています。  
-(将来的にはデフォルト設定を使用者が設定できるようにしたいが、時間的に今のところそこまでできません。)
-
-インストールが必要です。インストールしたら右クリック →「VSCode ﾜｰｸｽﾍﾟｰｽﾌｧｲﾙを作成する」を選択してください。
-
-ワークスペースファイル（.code-workspace）には、
-作成されるファイルは以下の通り
-
-```json
 {
   "folders": [
     {
-      "name": "【フォルダ名】",
+      "name": "AkCodeWorkSpaceCreator",
       "path": "."
     }
   ],
@@ -67,10 +53,31 @@ VSCode のワークスペースファイル（.code-workspace）を作成しま�
       "tab.activeBorder": null,
       "tab.inactiveBackground": null,
       "tab.inactiveForeground": null
-    }
+    },
+    "workbench.tree.indent": 12,
+    "workbench.iconTheme": "vscode-icons",
+    "debug.inlineValues": true,
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.openDebug": "openOnSessionStart",
+    "window.title": "${dirty}\\${activeEditorMedium}${separator}${rootName}",
+    "editor.minimap.side": "left",
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.size": "fit",
+    "editor.renderWhitespace": "all",
+    "editor.renderLineHighlight": "all",
+    "editor.renderControlCharacters": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.variables": {
+      "lang": "ja"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "extensions": {
-    "recommendations": []
+    "recommendations": [
+      "ms-ceintl.vscode-language-pack-ja",
+      "vscode-icons",
+      "esbenp.prettier-vscode"
+    ]
   }
 }
-```

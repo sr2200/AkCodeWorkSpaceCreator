@@ -1,4 +1,4 @@
-﻿using AkCodeWorkSpaceCreator.Data;
+﻿using AkCodeWorkSpaceCreator.Settings;
 using Newtonsoft.Json;
 using System;
 using System.IO;

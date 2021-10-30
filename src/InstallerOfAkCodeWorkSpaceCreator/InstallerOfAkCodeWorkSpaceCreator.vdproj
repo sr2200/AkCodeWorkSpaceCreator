@@ -37,6 +37,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.CoreRuntime.5.0.x64"
+                    {
+                    "Name" = "8:.NET ランタイム 5.0.11 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.CoreRuntime.5.0.x64"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -53,6 +69,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.CoreRuntime.5.0.x64"
+                    {
+                    "Name" = "8:.NET ランタイム 5.0.11 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.CoreRuntime.5.0.x64"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -140,21 +172,21 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:AkCodeWorkSpaceCreator"
-        "ProductCode" = "8:{22E68F70-2AE0-4514-B4D1-4C3EE0C7A725}"
-        "PackageCode" = "8:{1CEBE181-4143-4995-927F-FA52FC36ADB9}"
+        "ProductCode" = "8:{4F04F267-BB2E-41CC-A3CB-8B108558F649}"
+        "PackageCode" = "8:{9FD05386-9F08-485B-80E9-21C6C57C7623}"
         "UpgradeCode" = "8:{8837AE2E-F9A3-4B12-A12C-B2B9C49E4B16}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:AkProject"
+        "ProductVersion" = "8:1.0.1"
+        "Manufacturer" = "8:SR2200"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:AkCodeWorkSpaceCreator"
+        "Title" = "8:VSCodeﾜｰｸｽﾍﾟｰｽﾌｧｲﾙ作成機"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:AkProject"
+        "ARPCONTACT" = "8:SR2200"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
