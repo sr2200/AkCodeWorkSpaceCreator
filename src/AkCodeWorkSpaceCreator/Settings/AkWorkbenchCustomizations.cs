@@ -1,13 +1,13 @@
 ﻿using Newtonsoft.Json;
 
-namespace AkCodeWorkSpaceCreator.Data
+namespace AkCodeWorkSpaceCreator.Settings
 {
     /// <summary>
     /// 
     /// </summary>
     /// <see cref="https://code.visualstudio.com/api/references/theme-color"/>
     [JsonObject]
-    public class AkColorCustomizations
+    public class AkWorkbenchCustomizations
     {
         //"editor.background": "エディタの背景色",
         /// <summary>
@@ -469,8 +469,11 @@ namespace AkCodeWorkSpaceCreator.Data
         [JsonProperty("tab.inactiveForeground")]
         public string TaInactiveForeground { get; set; }
 
-
-        public AkColorCustomizations()
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="settings"></param>
+        public AkWorkbenchCustomizations(System.Collections.Generic.Dictionary<string, object> settings)
         {
             _comment1 = "ボタン、バッジ";
             _comment2 = "入力制御";
@@ -480,6 +483,14 @@ namespace AkCodeWorkSpaceCreator.Data
             _comment6 = "アクティビティバー（左端または右端にあるバー）";
             _comment7 = "サイドバー（エクスプローラや検索のようなビュー）";
             _comment8 = "タブ";
+
+            //現在選択している配色テーマで配色を上書きする。
+            settings["workbench.colorCustomizations"] = this;
+
+            //ツリーのインデントをピクセル単位で制御する
+            settings["workbench.tree.indent"] = 12;
+
+            settings["workbench.iconTheme"] = "vscode-icons";
         }
 
     }

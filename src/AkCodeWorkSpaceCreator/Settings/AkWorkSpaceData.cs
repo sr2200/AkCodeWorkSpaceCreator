@@ -5,8 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AkCodeWorkSpaceCreator.Data
+namespace AkCodeWorkSpaceCreator.Settings
 {
+    /// <summary>
+    /// ワークスペースのカスタム設定データクラス
+    /// </summary>
     [JsonObject]
     class AkWorkSpaceData
     {
@@ -14,7 +17,7 @@ namespace AkCodeWorkSpaceCreator.Data
         public List<AkFolderData> Folders { get; set; }
 
         [JsonProperty("settings")]
-        public AkCustomSettings Settings { get; set; }
+        public Dictionary<string,object> Settings { get; set; }
 
         [JsonProperty("extensions")]
         public AkExtensions Extensions { get; set; }
@@ -22,7 +25,8 @@ namespace AkCodeWorkSpaceCreator.Data
         public AkWorkSpaceData()
         {
             Folders = new List<AkFolderData>();
-            Settings = new AkCustomSettings();
+            Settings = new Dictionary<string, object>();
+            new AkCustomSettings(Settings);
             Extensions = new AkExtensions();
         }
     }

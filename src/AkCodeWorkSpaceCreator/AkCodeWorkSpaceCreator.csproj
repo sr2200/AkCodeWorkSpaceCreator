@@ -3,10 +3,28 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>AkCodeWorkSpaceCreator.snk</AssemblyOriginatorKeyFile>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <Version>1.0.1</Version>
+    <Authors>YasuhisaAoki</Authors>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/sr2200/AkCodeWorkSpaceCreator</RepositoryUrl>
+    <Description>VSCodeのワークスペースファイル（*.code-workspace）を作成します。</Description>
+    <Copyright>YasuhisaAoki</Copyright>
+    <Company>YasuhisaAoki</Company>
+    <NeutralLanguage>ja</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
