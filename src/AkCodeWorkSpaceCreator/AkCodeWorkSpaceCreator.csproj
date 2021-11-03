@@ -27,4 +27,13 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Template\Extensions.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Template\Editorconfig.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
