@@ -1,0 +1,4 @@
+﻿ms-ceintl.vscode-language-pack-ja
+vscode-icons-team.vscode-icons
+esbenp.prettier-vscode
+editorconfig.editorconfig
