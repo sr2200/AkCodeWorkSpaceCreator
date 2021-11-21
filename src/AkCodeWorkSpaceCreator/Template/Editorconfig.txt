@@ -4,7 +4,7 @@
 
 # 好みに変更
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 # 変更しない
 end_of_line = crlf
