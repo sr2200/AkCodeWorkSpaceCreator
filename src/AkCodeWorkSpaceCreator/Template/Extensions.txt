@@ -2,3 +2,4 @@
 vscode-icons-team.vscode-icons
 esbenp.prettier-vscode
 editorconfig.editorconfig
+fabiospampinato.vscode-todo-plus

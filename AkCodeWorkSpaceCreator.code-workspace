@@ -6,6 +6,14 @@
     }
   ],
   "settings": {
+    "terminal.integrated.profiles.windows": {
+      "PowerShell": {
+        "path": [
+          "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+        ],
+        "icon": "terminal-powershell"
+      },
+    },
     "workbench.colorCustomizations": {
       "editor.background": null,
       "editor.foreground": null,

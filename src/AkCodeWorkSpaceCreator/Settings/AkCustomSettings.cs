@@ -13,6 +13,9 @@ namespace AkCodeWorkSpaceCreator.Settings
         /// </summary>
         public AkCustomSettings(Dictionary<string, object> settings)
         {
+            //ターミナル設定
+            new AkTerminalCustomizations(settings);
+
             //カラー設定
             new AkWorkbenchCustomizations(settings);
 
