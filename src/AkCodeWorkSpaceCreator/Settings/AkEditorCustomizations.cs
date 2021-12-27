@@ -44,6 +44,9 @@ namespace AkCodeWorkSpaceCreator.Settings
 
             //既定のフォーマッタを定義する
             settings["editor.defaultFormatter"] = "esbenp.prettier-vscode";
+
+            //保存時の自動フォーマット設定
+            settings["editor.formatOnSave"] = true;
         }
     }
 }

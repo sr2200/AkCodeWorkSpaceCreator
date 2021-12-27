@@ -25,6 +25,12 @@ namespace AkCodeWorkSpaceCreator.Settings
 
             foreach (var item in fileContents.Split(Environment.NewLine))
             {
+                var initial = item.Substring(0, 1);
+                if("#" == initial)
+                {
+                    continue;
+                }
+
                 Recommendations.Add(item);
             }
         }
